@@ -1,0 +1,6 @@
+﻿{
+  "window.title": "fardinsalehi · ${dirty}${activeEditorShort}${separator}${rootName}",
+  "workbench.editor.customLabels.patterns": {
+    "**/index.html": "Portfolio (index.html)"
+  }
+}
