@@ -52,11 +52,11 @@ const persianTranslations = {
   "nav.about": "درباره من",
   "nav.resume": "رزومه",
   "hero.status": "برای همکاری حضوری، دورکاری یا ترکیبی آماده‌ام",
-  "hero.role": "مهندس فرانت‌اند · اصفهان، ایران",
+  "hero.role": "مهندس ارشد فرانت‌اند · React · Next.js · TypeScript · توسعه مبتنی بر هوش مصنوعی",
   "hero.eyebrow": "۰۱ / معرفی",
   "hero.title": "برای محصولات <span>پیچیده</span><br>رابط کاربری سریع<br>و پایدار می‌سازم.",
   "hero.summary":
-    "من فردین صالحی‌زاده هستم. بیش از ۴ سال است برای محصولات واقعی فرانت‌اند می‌سازم؛ از داشبوردهای سازمانی تا ابزارهای بلادرنگ، با تمرکز بر سرعت، پایداری و نگهداری آسان.",
+    "من فردین صالحی‌زاده هستم؛ مهندس ارشد فرانت‌اند با بیش از ۴ سال تجربه در ساخت وب‌اپلیکیشن‌های پیچیده با React، Next.js و TypeScript. تمرکز اصلی من بر توسعه CRMهای سازمانی، سامانه‌های بلادرنگ و به‌کارگیری جریان‌های کاری مبتنی بر هوش مصنوعی (AI-Native) در مهندسی نرم‌افزار است.",
   "hero.ctaWork": "مشاهده پروژه‌ها",
   "hero.ctaAbout": "درباره من",
   "work.eyebrow": "۰۲ / پروژه‌های منتخب",
@@ -102,7 +102,7 @@ const persianTranslations = {
   "experience.taskino.time": "۲۰۲۶—اکنون",
   "experience.seniorFrontendRole": "توسعه‌دهنده ارشد فرانت‌اند",
   "experience.taskino.summary":
-    "فرانت‌اند یک CRM سازمانی را برای سه نقش کارشناس، سرپرست و مدیر توسعه می‌دهم؛ از گزارش و برنامه‌ریزی تا تأیید وظایف، اعلان‌ها و به‌روزرسانی بلادرنگ با Socket.IO.",
+    "فرانت‌اند یک CRM سازمانی را برای سه نقش کارشناس، سرپرست و مدیر توسعه می‌دهم؛ ارائه تحلیل داده، برنامه‌ریزی، تأیید وظایف، اعلان‌ها و گردش‌کارهای بلادرنگ با Socket.IO همراه با استفاده از جریان‌های کاری توسعه مبتنی بر AI.",
   "experience.polyshot.time": "۲۰۲۵—مارس ۲۰۲۶",
   "experience.frontendRole": "توسعه‌دهنده فرانت‌اند",
   "experience.polyshot.summary":
@@ -122,6 +122,7 @@ const persianTranslations = {
     "گردش‌کارهای ورود و سطح دسترسی را برای پرونده‌های پزشکی پزشکان، پرستاران، آزمایشگاه و مدیران توسعه دادم.",
   "tags.enterpriseCrm": "CRM سازمانی",
   "tags.realtimeUi": "رابط کاربری بلادرنگ",
+  "tags.aiWorkflows": "جریان کاری مبتنی بر AI",
   "tags.performance": "عملکرد",
   "tags.liveData": "داده بلادرنگ",
   "tags.designSystems": "سیستم طراحی",
@@ -149,15 +150,16 @@ const persianTranslations = {
   "about.capability2.title": "سیستم‌های فرانت‌اند",
   "about.capability2.body":
     "کامپوننت‌های قابل استفاده مجدد، مدیریت داده سرور، دسترس‌پذیری و بهینه‌سازی عملکرد.",
-  "about.capability3.title": "گردش‌کارهای پیچیده",
+  "about.capability3.title": "سیستم‌های پیچیده و توسعه مبتنی بر AI",
   "about.capability3.body":
-    "سطح دسترسی بر اساس نقش، فرم‌های چندمرحله‌ای، REST API و به‌روزرسانی بلادرنگ.",
+    "جریان‌های کاری مبتنی بر ایجنت‌های کدنویسی، دسترسی‌های چندسطحی بر اساس نقش، ارتباطات بلادرنگ Socket.IO و خودکارسازی فرآیند توسعه.",
   "skills.eyebrow": "ابزارهای فنی",
   "skills.title": "ابزارها و فناوری‌هایی که در پروژه‌ها استفاده می‌کنم.",
-  "skills.core": "هسته",
-  "skills.state": "مدیریت داده",
-  "skills.ui": "رابط کاربری",
-  "skills.engineering": "مهندسی",
+  "skills.frontend": "فرانت‌اند و هسته",
+  "skills.state": "مدیریت داده و وضعیت",
+  "skills.ai": "هوش مصنوعی و ابزارهای توسعه",
+  "skills.ui": "رابط کاربری و کارایی",
+  "skills.engineering": "مهندسی و بلاک‌چین",
   "education.eyebrow": "تحصیلات",
   "education.time": "۲۰۱۹—۲۰۲۳",
   "education.degree": "کارشناسی علوم کامپیوتر",
@@ -175,7 +177,7 @@ const persianTranslations = {
   "contact.title": "برای همکاری یا ساخت محصول<br><span>به من پیام بدهید.</span>",
   "contact.cta": "ارسال ایمیل",
   "contact.email": "ایمیل",
-  "footer.role": "فردین صالحی‌زاده · مهندس فرانت‌اند",
+  "footer.role": "فردین صالحی‌زاده · مهندس ارشد فرانت‌اند",
   "footer.tagline": "طراحی و توسعه توسط فردین صالحی‌زاده.",
   "gallery.eyebrow": "صفحه‌های پروژه آرشیوی",
 };
@@ -264,15 +266,15 @@ function applyLanguage(language, persist = true) {
   });
 
   document.title = isPersian
-    ? "فردین صالحی‌زاده — مهندس فرانت‌اند"
-    : "Fardin Salehizadeh — Front-End Engineer";
+    ? "فردین صالحی‌زاده — مهندس ارشد فرانت‌اند و توسعه مبتنی بر هوش مصنوعی"
+    : "Fardin Salehizadeh — Senior Frontend Engineer & AI-Native Developer";
   document.querySelector('meta[name="description"]').content = isPersian
-    ? "پورتفولیوی فردین صالحی‌زاده؛ مهندس فرانت‌اند با بیش از ۴ سال تجربه در ساخت محصولات واقعی با React، Next.js و TypeScript."
-    : "Portfolio of Fardin Salehizadeh — front-end engineer with 4+ years of experience building production applications with React, Next.js, and TypeScript.";
+    ? "پورتفولیوی فردین صالحی‌زاده؛ مهندس ارشد فرانت‌اند با بیش از ۴ سال تجربه در ساخت محصولات واقعی با React، Next.js، TypeScript و جریان‌های مهندسی AI-Native."
+    : "Portfolio of Fardin Salehizadeh — Senior Frontend Engineer with 4+ years of experience building complex web applications with React, Next.js, TypeScript, and AI-native engineering workflows.";
   document.querySelector('meta[property="og:title"]').content = document.title;
   document.querySelector('meta[property="og:description"]').content = isPersian
-    ? "تجربه کاری، پروژه‌های منتخب و مطالعات تصویری محصولات آرشیوی."
-    : "Production experience, selected product work, and archived interface case studies.";
+    ? "تجربه کاری، پروژه‌های منتخب و معماری رابط‌های کاربری بلادرنگ و مبتنی بر AI."
+    : "Production experience, selected product work, and AI-native interface architecture.";
 
   closeButton.setAttribute("aria-label", isPersian ? "بستن گالری" : "Close gallery");
   prevButton.setAttribute("aria-label", isPersian ? "تصویر قبلی" : "Previous screen");

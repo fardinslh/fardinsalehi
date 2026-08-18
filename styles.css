@@ -398,13 +398,26 @@ svg {
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: clamp(4rem, 8vw, 8rem) clamp(4rem, 8vw, 8rem);
   mask-image: linear-gradient(to bottom, black, transparent 78%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.webgl-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.95;
+  transition: opacity 300ms ease;
 }
 
 .hero-meta,
 .hero-copy,
 .hero-bottom {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-meta {
@@ -1273,7 +1286,7 @@ svg {
 }
 
 .skill-matrix-heading {
-  grid-row: span 2;
+  grid-row: span 3;
   padding: clamp(1.5rem, 3vw, 2.75rem);
   border-right: 1px solid var(--line);
 }
@@ -1289,18 +1302,21 @@ svg {
 }
 
 .skill-group {
-  min-height: 10rem;
+  min-height: 9rem;
   padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
 }
 
 .skill-group:nth-child(2),
-.skill-group:nth-child(4) {
+.skill-group:nth-child(4),
+.skill-group:nth-child(6) {
   border-right: 1px solid var(--line);
 }
 
-.skill-group:nth-child(2),
-.skill-group:nth-child(3) {
-  border-bottom: 1px solid var(--line);
+.skill-group:nth-child(5),
+.skill-group:nth-child(6),
+.skill-group:last-child {
+  border-bottom: 0;
 }
 
 .skill-group span {
@@ -1923,13 +1939,12 @@ footer p:last-child {
   .skill-matrix-heading,
   .skill-group,
   .skill-group:nth-child(2),
-  .skill-group:nth-child(4) {
+  .skill-group:nth-child(4),
+  .skill-group:nth-child(6) {
     border-right: 0;
   }
 
-  .skill-group,
-  .skill-group:nth-child(3),
-  .skill-group:nth-child(4) {
+  .skill-group {
     border-bottom: 1px solid var(--line);
   }
 

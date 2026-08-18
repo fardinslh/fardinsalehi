@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#f3f0e8" />
     <meta
       name="description"
-      content="Portfolio of Fardin Salehizadeh — front-end engineer with 4+ years of experience building production applications with React, Next.js, and TypeScript."
+      content="Portfolio of Fardin Salehizadeh — Senior Frontend Engineer with 4+ years of experience building complex web applications with React, Next.js, TypeScript, and AI-native engineering workflows."
     />
-    <meta property="og:title" content="Fardin Salehizadeh — Front-End Engineer" />
+    <meta property="og:title" content="Fardin Salehizadeh — Senior Frontend Engineer" />
     <meta
       property="og:description"
-      content="Production experience, selected product work, and archived interface case studies."
+      content="Production experience, selected product work, and AI-native interface architecture."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fardinsalehi.vercel.app" />
@@ -36,7 +36,8 @@
     </script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Fardin Salehizadeh — Front-End Engineer</title>
+    <script type="module" src="three-scene.js"></script>
+    <title>Fardin Salehizadeh — Senior Frontend Engineer &amp; AI-Native Developer</title>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -99,10 +100,11 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <canvas id="webgl-canvas" class="webgl-canvas" aria-hidden="true"></canvas>
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-meta reveal">
           <span class="status"><i></i><span data-i18n="hero.status">Open to remote, on-site &amp; hybrid</span></span>
-          <span data-i18n="hero.role">Front-End Engineer · Isfahan, Iran</span>
+          <span data-i18n="hero.role">Senior Frontend Engineer · React · Next.js · TypeScript · AI-Native Development</span>
         </div>
 
         <div class="hero-copy">
@@ -116,8 +118,9 @@
 
         <div class="hero-bottom reveal">
           <p data-i18n="hero.summary">
-            I’m Fardin Salehizadeh, a front-end engineer with 4+ years of experience
-            translating complex operational workflows into fast, maintainable product experiences.
+            I’m Fardin Salehizadeh, a senior front-end engineer with 4+ years of production experience
+            building complex web applications with React, Next.js, and TypeScript, with a strong focus
+            on AI-native software engineering, real-time workflows, and high-performance UI.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">
@@ -133,13 +136,17 @@
       <div class="ticker" aria-label="Core technologies">
         <div class="ticker-track">
           <span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i>
-          <span>React Query</span><i>✦</i><span>Role-Based UI</span><i>✦</i><span>Socket.IO</span><i>✦</i>
+          <span>AI-Native Dev</span><i>✦</i><span>TanStack Query</span><i>✦</i><span>Socket.IO</span><i>✦</i>
+          <span>Agentic Workflows</span><i>✦</i><span>Local LLMs</span><i>✦</i><span>Playwright</span><i>✦</i>
           <span aria-hidden="true">React</span><i aria-hidden="true">✦</i>
           <span aria-hidden="true">Next.js</span><i aria-hidden="true">✦</i>
           <span aria-hidden="true">TypeScript</span><i aria-hidden="true">✦</i>
-          <span aria-hidden="true">React Query</span><i aria-hidden="true">✦</i>
-          <span aria-hidden="true">Role-Based UI</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">AI-Native Dev</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">TanStack Query</span><i aria-hidden="true">✦</i>
           <span aria-hidden="true">Socket.IO</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Agentic Workflows</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Local LLMs</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Playwright</span><i aria-hidden="true">✦</i>
         </div>
       </div>
 
@@ -461,7 +468,7 @@
         <ol class="experience-list">
           <li class="experience-item reveal">
             <div class="experience-time">
-              <span data-i18n="experience.taskino.time">2026—Now</span>
+              <span data-i18n="experience.taskino.time">2026—Present</span>
               <i aria-hidden="true"></i>
             </div>
             <div class="experience-role">
@@ -469,11 +476,12 @@
               <h3 data-i18n="experience.seniorFrontendRole">Senior Front-End Developer</h3>
             </div>
             <p class="experience-summary" data-i18n="experience.taskino.summary">
-              Own the front end of an enterprise CRM for specialists, supervisors, and managers;
-              delivering analytics, planning, approvals, notifications, and live Socket.IO workflows.
+              Own the frontend of an enterprise CRM for specialists, supervisors, and managers;
+              delivering analytics, planning, approvals, notifications, role-based dashboards, and live Socket.IO workflows
+              while utilizing AI-assisted engineering workflows for implementation, debugging, refactoring, and rapid delivery.
             </p>
             <ul class="experience-tags" aria-label="Key skills">
-              <li data-i18n="tags.enterpriseCrm">Enterprise CRM</li><li>React Query</li><li data-i18n="tags.realtimeUi">Real-time UI</li>
+              <li data-i18n="tags.enterpriseCrm">Enterprise CRM</li><li>React Query</li><li data-i18n="tags.realtimeUi">Real-time UI</li><li data-i18n="tags.aiWorkflows">AI-Assisted Workflows</li>
             </ul>
           </li>
 
@@ -649,7 +657,7 @@
             </div>
             <div class="capability">
               <span>03</span>
-              <div><h3 data-i18n="about.capability3.title">Complex workflows</h3><p data-i18n="about.capability3.body">Role-based access, real-time updates, REST APIs, forms, and production delivery.</p></div>
+              <div><h3 data-i18n="about.capability3.title">AI-native &amp; complex workflows</h3><p data-i18n="about.capability3.body">Agentic workflows, role-based access, real-time Socket.IO updates, and developer automation.</p></div>
             </div>
           </div>
         </div>
@@ -660,20 +668,24 @@
             <h3 id="skills-title" data-i18n="skills.title">The stack behind the screens.</h3>
           </div>
           <div class="skill-group">
-            <span data-i18n="skills.core">Core</span>
-            <p>JavaScript ES6+, TypeScript, React, Next.js, HTML5, CSS3</p>
+            <span data-i18n="skills.frontend">Frontend &amp; Core</span>
+            <p>React, Next.js (App Router, SSR, SSG), TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3, PWA</p>
           </div>
           <div class="skill-group">
             <span data-i18n="skills.state">State &amp; data</span>
-            <p>React Query, Redux Toolkit, Context API, REST APIs, React Hook Form</p>
+            <p>TanStack React Query, Redux Toolkit, Context API, React Hook Form, REST APIs, Socket.IO</p>
           </div>
           <div class="skill-group">
-            <span data-i18n="skills.ui">UI systems</span>
-            <p>Tailwind CSS, SCSS, Material UI, Bootstrap, ECharts, Framer Motion</p>
+            <span data-i18n="skills.ai">AI &amp; Developer Tooling</span>
+            <p>OpenAI Codex, Codex CLI, Agentic coding workflows, Local LLMs (Ollama, Qwen), Claude, Gemini, Prompt Engineering, Playwright, Browser Automation</p>
           </div>
           <div class="skill-group">
-            <span data-i18n="skills.engineering">Engineering</span>
-            <p>App Router, SSR, SSG, PWA, code splitting, Socket.IO, Git, Agile</p>
+            <span data-i18n="skills.ui">UI &amp; Performance</span>
+            <p>ECharts, Framer Motion, Material UI, SCSS, Bootstrap, Code Splitting, Responsive UI</p>
+          </div>
+          <div class="skill-group">
+            <span data-i18n="skills.engineering">Engineering &amp; Blockchain</span>
+            <p>Git, GitHub, Agile, Playwright, Browser Automation, Vercel, Figma, Stellar APIs, DEX interfaces, Crypto UX</p>
           </div>
         </div>
 
@@ -717,7 +729,7 @@
 
     <footer>
       <a class="brand" href="#top" aria-label="Back to top"><span>FS</span></a>
-      <p data-i18n="footer.role">Fardin Salehizadeh · Front-End Engineer</p>
+      <p data-i18n="footer.role">Fardin Salehizadeh · Senior Frontend Engineer</p>
       <p data-i18n="footer.tagline">Designed &amp; built with intent.</p>
     </footer>
 
