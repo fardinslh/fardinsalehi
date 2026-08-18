@@ -392,7 +392,7 @@ svg {
 .hero-grid {
   position: absolute;
   inset: 0;
-  opacity: 0.22;
+  opacity: 0.18;
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
@@ -407,10 +407,15 @@ svg {
   inset: 0;
   width: 100% !important;
   height: 100% !important;
-  pointer-events: none;
+  pointer-events: auto;
   z-index: 0;
-  opacity: 0.95;
+  opacity: 1;
+  cursor: grab;
   transition: opacity 300ms ease;
+}
+
+.webgl-canvas:active {
+  cursor: grabbing;
 }
 
 .hero-meta,
@@ -418,6 +423,19 @@ svg {
 .hero-bottom {
   position: relative;
   z-index: 2;
+  pointer-events: none;
+}
+
+.hero-meta a,
+.hero-meta button,
+.hero-copy a,
+.hero-copy button,
+.hero-copy h1,
+.hero-copy p,
+.hero-bottom a,
+.hero-bottom button,
+.hero-bottom p {
+  pointer-events: auto;
 }
 
 .hero-meta {
@@ -435,6 +453,21 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.status-3d {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(200, 255, 61, 0.08);
+  border: 1px solid rgba(200, 255, 61, 0.2);
+  color: var(--acid);
+  font-family: "DM Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .status i,
