@@ -262,17 +262,18 @@
     let mouseNorm = { x: 0, y: 0 };
     let targetMouseNorm = { x: 0, y: 0 };
     let scrollProgress = 0;
-    let isRendering = true;
     let pulseScale = 1;
 
     function handlePointerMove(e) {
       if (reducedMotion.matches) return;
       const rect = canvas.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) return;
+
       const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
 
-      targetMouseNorm.x = x * 2.2;
-      targetMouseNorm.y = y * 2.2;
+      targetMouseNorm.x = Math.max(-2.5, Math.min(2.5, x * 2.2));
+      targetMouseNorm.y = Math.max(-2.5, Math.min(2.5, y * 2.2));
 
       // Update cursor 3D point light position
       mouseLight.position.x = x * 14;
@@ -300,13 +301,6 @@
     window.addEventListener('pointermove', handlePointerMove, { passive: true });
     window.addEventListener('pointerdown', handlePointerDown, { passive: true });
     window.addEventListener('pointerup', handlePointerUp, { passive: true });
-
-    function handleScroll() {
-      const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
-      scrollProgress = scrollMax > 0 ? window.scrollY / scrollMax : 0;
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
 
     // 10. Resize & Positioning
     function handleResize() {
@@ -384,29 +378,71 @@
       attributeFilter: ['data-theme', 'dir', 'lang']
     });
 
-    // 12. Visibility & Lifecycle Optimization
+    // 12. Robust Animation Lifecycle & Scroll Controller
+    let clock = new THREE.Clock();
+    let autoRotX = 0;
+    let autoRotY = 0;
+    let isRunning = false;
+    let animFrameId = null;
+
+    function startAnimation() {
+      if (isRunning) return;
+      if (document.hidden) return;
+      isRunning = true;
+      clock.getDelta(); // reset delta so no sudden jumps occur
+      animFrameId = requestAnimationFrame(animate);
+    }
+
+    function stopAnimation() {
+      if (!isRunning) return;
+      isRunning = false;
+      if (animFrameId) {
+        cancelAnimationFrame(animFrameId);
+        animFrameId = null;
+      }
+    }
+
+    function handleScroll() {
+      const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgress = scrollMax > 0 ? window.scrollY / scrollMax : 0;
+
+      // When scrolled in hero or nearby view, guarantee loop is active
+      const heroRect = hero.getBoundingClientRect();
+      const isVisible = heroRect.bottom > -100 && heroRect.top < window.innerHeight + 100;
+      if (isVisible && !isRunning && !document.hidden) {
+        startAnimation();
+      } else if (!isVisible && isRunning) {
+        stopAnimation();
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
     document.addEventListener('visibilitychange', () => {
-      isRendering = !document.hidden;
-      if (isRendering) requestAnimationFrame(animate);
+      if (document.hidden) {
+        stopAnimation();
+      } else {
+        handleScroll();
+      }
     });
 
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          isRendering = entry.isIntersecting || window.scrollY < window.innerHeight;
+          if (entry.isIntersecting || window.scrollY < window.innerHeight) {
+            startAnimation();
+          } else {
+            stopAnimation();
+          }
         });
-      }, { rootMargin: '150px' });
+      }, { rootMargin: '200px' });
       io.observe(hero);
     }
 
-    // 13. Animation Loop
-    let clock = new THREE.Clock();
-    let autoRotX = 0;
-    let autoRotY = 0;
-
+    // 13. Animation Frame
     function animate() {
-      if (!isRendering) return;
-      requestAnimationFrame(animate);
+      if (!isRunning) return;
+      animFrameId = requestAnimationFrame(animate);
 
       const delta = Math.min(clock.getDelta(), 0.1);
       const elapsed = clock.getElapsedTime();
@@ -482,7 +518,7 @@
       renderer.render(scene, camera);
     }
 
-    requestAnimationFrame(animate);
+    startAnimation();
   }
 
   if (document.readyState === 'loading') {
