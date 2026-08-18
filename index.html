@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f0e8" />
+    <meta
+      name="description"
+      content="Portfolio of Fardin Salehizadeh — front-end engineer with 4+ years of experience building production applications with React, Next.js, and TypeScript."
+    />
+    <meta property="og:title" content="Fardin Salehizadeh — Front-End Engineer" />
+    <meta
+      property="og:description"
+      content="Production experience, selected product work, and archived interface case studies."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fardinsalehi.vercel.app" />
+    <meta property="og:image" content="https://fardinsalehi.vercel.app/assets/live/solana-pulse.png" />
+    <link rel="canonical" href="https://fardinsalehi.vercel.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const storedTheme = localStorage.getItem("theme");
+        const theme = storedTheme || "light";
+        const language = localStorage.getItem("language") || "en";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.lang = language;
+        document.documentElement.dir = language === "fa" ? "rtl" : "ltr";
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Fardin Salehizadeh — Front-End Engineer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Fardin Salehizadeh, back to top">
+        <span>FS</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#archive" data-i18n="nav.archive">Archive</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="header-control language-toggle"
+          type="button"
+          data-language-toggle
+          aria-label="Switch to Persian"
+        >
+          <span data-language-label>FA</span>
+        </button>
+        <button
+          class="header-control theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch to light mode"
+        >
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 20 20">
+              <circle cx="10" cy="10" r="3.25" />
+              <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16" />
+            </svg>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 20 20">
+              <path d="M16.7 12.3A7 7 0 0 1 7.7 3.3a7 7 0 1 0 9 9Z" />
+            </svg>
+          </span>
+        </button>
+        <a
+          class="header-cta"
+          href="assets/Fardin-Salehizadeh-Resume.pdf?v=FSR26"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open Fardin Salehizadeh's résumé PDF"
+        >
+          <span data-i18n="nav.resume">Résumé</span>
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M4 1.5h5l3 3v10H4Z" />
+            <path d="M9 1.5v3h3M6 8h4M6 10.5h4" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-meta reveal">
+          <span class="status"><i></i><span data-i18n="hero.status">Open to remote, on-site &amp; hybrid</span></span>
+          <span data-i18n="hero.role">Front-End Engineer · Isfahan, Iran</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">01 / Introduction</p>
+          <h1 id="hero-title" class="reveal" data-i18n="hero.title">
+            I build interfaces<br />
+            that make <span>complex</span><br />
+            products feel obvious.
+          </h1>
+        </div>
+
+        <div class="hero-bottom reveal">
+          <p data-i18n="hero.summary">
+            I’m Fardin Salehizadeh, a front-end engineer with 4+ years of experience
+            translating complex operational workflows into fast, maintainable product experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              <span data-i18n="hero.ctaWork">Explore selected work</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
+            </a>
+            <a class="button button-ghost" href="#about" data-i18n="hero.ctaAbout">More about me</a>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="ticker" aria-label="Core technologies">
+        <div class="ticker-track">
+          <span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i>
+          <span>React Query</span><i>✦</i><span>Role-Based UI</span><i>✦</i><span>Socket.IO</span><i>✦</i>
+          <span aria-hidden="true">React</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Next.js</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">TypeScript</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">React Query</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Role-Based UI</span><i aria-hidden="true">✦</i>
+          <span aria-hidden="true">Socket.IO</span><i aria-hidden="true">✦</i>
+        </div>
+      </div>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="work.eyebrow">02 / Selected work</p>
+            <h2 id="work-title" data-i18n="work.title">Built to work.<br /><span>Designed to land.</span></h2>
+          </div>
+          <p data-i18n="work.intro">
+            Live products spanning ecosystem intelligence, team operations, customer
+            relationship management, decentralized trading, and identity verification.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="project project-green reveal">
+            <div class="project-topline">
+              <span>01</span>
+              <span class="live-pill"><i></i><span data-i18n="common.liveProduct">Live product</span></span>
+            </div>
+            <a
+              class="project-visual"
+              href="https://solana-pulse-two.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open SolanaPulse live site"
+            >
+              <img
+                src="assets/card-thumbs/solana-pulse.png"
+                alt="SolanaPulse real-time ecosystem intelligence dashboard"
+                width="720"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="visit-chip" data-i18n="common.visitLive">Visit live site ↗</span>
+            </a>
+            <div class="project-copy">
+              <div>
+                <p class="project-kicker" data-i18n="projects.solana.kicker">Ecosystem intelligence · 2026</p>
+                <h3>SolanaPulse</h3>
+              </div>
+              <div class="project-description">
+                <p data-i18n="projects.solana.description">
+                  A keyless, automatically updating report that turns Solana network,
+                  validator, economic, and real-world asset data into one readable command center.
+                </p>
+                <ul aria-label="Technologies">
+                  <li>Next.js</li><li>TypeScript</li><li>Live data</li><li>Data visualization</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-teal reveal">
+            <div class="project-topline">
+              <span>02</span>
+              <span class="live-pill"><i></i><span data-i18n="common.demoReady">Demo ready</span></span>
+            </div>
+            <a
+              class="project-visual"
+              href="https://taskino-three.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Taskino live demo"
+            >
+              <img
+                src="assets/card-thumbs/taskino.png"
+                alt="Taskino role-based task management login with instant demo access"
+                width="720"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="visit-chip" data-i18n="common.tryDemo">Try live demo ↗</span>
+            </a>
+            <div class="project-copy">
+              <div>
+                <p class="project-kicker" data-i18n="projects.taskino.kicker">Team operations · 2026</p>
+                <h3>Taskino</h3>
+              </div>
+              <div class="project-description">
+                <p data-i18n="projects.taskino.description">
+                  An enterprise CRM with reporting, approvals, recurring schedules,
+                  performance analytics, and three role-based dashboards with one-click demos.
+                </p>
+                <ul aria-label="Technologies">
+                  <li>Next.js</li><li>React Query</li><li>Socket.IO</li><li>Role-based UI</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-blue reveal">
+            <div class="project-topline">
+              <span>03</span>
+              <span class="live-pill"><i></i><span data-i18n="common.liveProduct">Live product</span></span>
+            </div>
+            <a
+              class="project-visual"
+              href="https://nexacrm-ruddy.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open NexaCRM live site"
+            >
+              <img
+                src="assets/card-thumbs/nexacrm.png"
+                alt="NexaCRM customer relationship management dashboard"
+                width="720"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="visit-chip" data-i18n="common.visitLive">Visit live site ↗</span>
+            </a>
+            <div class="project-copy">
+              <div>
+                <p class="project-kicker" data-i18n="projects.nexa.kicker">Customer operations · 2026</p>
+                <h3>NexaCRM</h3>
+              </div>
+              <div class="project-description">
+                <p data-i18n="projects.nexa.description">
+                  A modern CRM experience for managing contacts, sales pipelines, business
+                  analytics, and everyday customer operations.
+                </p>
+                <ul aria-label="Technologies">
+                  <li>Next.js</li><li>Supabase</li><li>Recharts</li><li>DnD Kit</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-violet reveal">
+            <div class="project-topline">
+              <span>04</span>
+              <span class="live-pill"><i></i><span data-i18n="common.liveProduct">Live product</span></span>
+            </div>
+            <a
+              class="project-visual"
+              href="https://lumenswap.io"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Lumenswap live site"
+            >
+              <img
+                src="assets/card-thumbs/lumenswap-project.png"
+                alt="Lumenswap decentralized exchange on Stellar"
+                width="720"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="visit-chip" data-i18n="common.visitLive">Visit live site ↗</span>
+            </a>
+            <div class="project-copy">
+              <div>
+                <p class="project-kicker" data-i18n="projects.lumenswap.kicker">Stellar exchange · Live</p>
+                <h3>Lumenswap</h3>
+              </div>
+              <div class="project-description">
+                <p data-i18n="projects.lumenswap.description">
+                  A decentralized exchange on Stellar for swapping assets, finding efficient
+                  trade routes, and creating limit orders through a focused interface.
+                </p>
+                <ul aria-label="Technologies">
+                  <li>React</li><li>Stellar</li><li>DEX</li><li>Responsive UI</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-gold reveal">
+            <div class="project-topline">
+              <span>05</span>
+              <span class="live-pill"><i></i><span data-i18n="common.demoReady">Demo ready</span></span>
+            </div>
+            <a
+              class="project-visual"
+              href="https://ehraz.vercel.app/demo"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Ehraz public demo"
+            >
+              <img
+                src="assets/card-thumbs/ehraz.png"
+                alt="Ehraz Persian verification workflow public demo"
+                width="720"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="visit-chip" data-i18n="common.tryDemo">Try live demo ↗</span>
+            </a>
+            <div class="project-copy">
+              <div>
+                <p class="project-kicker" data-i18n="projects.ehraz.kicker">Identity verification · 2026</p>
+                <h3>Ehraz</h3>
+              </div>
+              <div class="project-description">
+                <p data-i18n="projects.ehraz.description">
+                  A Persian, role-based workflow for onboarding gold sellers and reviewing
+                  verification cases, with a public demo and a defined boundary for future
+                  fingerprint hardware integration.
+                </p>
+                <ul aria-label="Technologies">
+                  <li>React</li><li>TypeScript</li><li>Role-based UI</li><li>Security workflows</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="archive.eyebrow">03 / The archive</p>
+            <h2 id="archive-title" data-i18n="archive.title">Past builds.<br /><span>Still worth seeing.</span></h2>
+          </div>
+          <p data-i18n="archive.intro">
+            Earlier product work lives here as visual case studies. Some products are still
+            online; others are available only through these screen galleries.
+          </p>
+        </div>
+
+        <div class="archive-grid">
+          <button class="archive-card reveal" type="button" data-gallery="lumeme">
+            <span class="archive-index">A—01</span>
+            <div class="archive-image">
+              <img
+                src="assets/card-thumbs/lumeme.png"
+                alt="Lumeme crypto meme marketplace explore page"
+                width="720"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="archive.view8">View 8 screens</span>
+            </div>
+            <div class="archive-copy">
+              <div><h3>Lumeme</h3><p data-i18n="archive.lumeme">Meme token marketplace</p></div>
+              <span data-i18n="common.visualCase">Visual case study ↗</span>
+            </div>
+          </button>
+
+          <button class="archive-card reveal" type="button" data-gallery="lumenswap">
+            <span class="archive-index">A—02</span>
+            <div class="archive-image">
+              <img
+                src="assets/card-thumbs/lumenswap-archive.png"
+                alt="Lumenswap decentralized exchange landing page"
+                width="720"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="archive.view3">View 3 screens</span>
+            </div>
+            <div class="archive-copy">
+              <div><h3>Lumenswap</h3><p data-i18n="archive.lumenswap">Stellar decentralized exchange</p></div>
+              <span data-i18n="common.visualCase">Visual case study ↗</span>
+            </div>
+          </button>
+
+          <button class="archive-card reveal" type="button" data-gallery="polyshot">
+            <span class="archive-index">A—03</span>
+            <div class="archive-image">
+              <img
+                src="assets/card-thumbs/polyshot.png"
+                alt="Polyshot dark sports prediction interface"
+                width="720"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="archive.view4">View 4 screens</span>
+            </div>
+            <div class="archive-copy">
+              <div><h3>Polyshot</h3><p data-i18n="archive.polyshot">Sports prediction market</p></div>
+              <span data-i18n="common.visualCase">Visual case study ↗</span>
+            </div>
+          </button>
+
+          <button class="archive-card reveal" type="button" data-gallery="salmooni">
+            <span class="archive-index">A—04</span>
+            <div class="archive-image">
+              <img
+                src="assets/card-thumbs/salmooni.png"
+                alt="Salmooni Persian barber booking marketplace"
+                width="720"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="archive.view5">View 5 screens</span>
+            </div>
+            <div class="archive-copy">
+              <div><h3>Salmooni</h3><p data-i18n="archive.salmooni">Barber discovery and booking</p></div>
+              <span data-i18n="common.visualCase">Visual case study ↗</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="experience.eyebrow">04 / Experience</p>
+            <h2 id="experience-title" data-i18n="experience.title">Four years deep.<br /><span>Still pushing forward.</span></h2>
+          </div>
+          <p data-i18n="experience.intro">
+            Production work across enterprise operations, crypto products, real-time markets,
+            booking systems, and permission-heavy medical workflows.
+          </p>
+        </div>
+
+        <ol class="experience-list">
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.taskino.time">2026—Now</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p>Golestan Company · Taskino CRM</p>
+              <h3 data-i18n="experience.seniorFrontendRole">Senior Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.taskino.summary">
+              Own the front end of an enterprise CRM for specialists, supervisors, and managers;
+              delivering analytics, planning, approvals, notifications, and live Socket.IO workflows.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li data-i18n="tags.enterpriseCrm">Enterprise CRM</li><li>React Query</li><li data-i18n="tags.realtimeUi">Real-time UI</li>
+            </ul>
+          </li>
+
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.polyshot.time">2025—Mar 2026</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p>Polyshot.io</p>
+              <h3 data-i18n="experience.seniorFrontendRole">Senior Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.polyshot.summary">
+              Improved rendering performance and real-time reliability across data-driven
+              sports-market views while building reusable patterns for faster product delivery.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li data-i18n="tags.performance">Performance</li><li data-i18n="tags.liveData">Live data</li><li data-i18n="tags.designSystems">Design systems</li>
+            </ul>
+          </li>
+
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.lumeme.time">2024—2025</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p>lu.meme</p>
+              <h3 data-i18n="experience.frontendRole">Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.lumeme.summary">
+              Built Stellar-powered discovery, minting, trading, market charts, swaps,
+              liquidity, profiles, and PWA flows in a production Next.js application.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li>Next.js</li><li>Stellar APIs</li><li>PWA</li>
+            </ul>
+          </li>
+
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.salmooni.time">2024</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p>Salmooni.com</p>
+              <h3 data-i18n="experience.frontendRole">Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.salmooni.summary">
+              Strengthened the mobile booking experience through responsive refinement,
+              render optimization, and more reliable form validation.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li data-i18n="tags.responsiveUi">Responsive UI</li><li data-i18n="tags.reactPerformance">React performance</li><li data-i18n="tags.validation">Validation</li>
+            </ul>
+          </li>
+
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.lumenswap.time">2022—2023</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p>Lumenswap.io</p>
+              <h3 data-i18n="experience.frontendRole">Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.lumenswap.summary">
+              Built reusable responsive components and refined motion and interaction
+              patterns for a production cryptocurrency application.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li data-i18n="tags.componentSystems">Component systems</li><li data-i18n="tags.motion">Motion</li><li data-i18n="tags.cryptoUx">Crypto UX</li>
+            </ul>
+          </li>
+
+          <li class="experience-item reveal">
+            <div class="experience-time">
+              <span data-i18n="experience.zobahan.time">2022</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="experience-role">
+              <p data-i18n="experience.zobahan.company">Zobahan Occupational Medicine</p>
+              <h3 data-i18n="experience.frontendRole">Front-End Developer</h3>
+            </div>
+            <p class="experience-summary" data-i18n="experience.zobahan.summary">
+              Developed authenticated, permission-based medical-record workflows for doctors,
+              nurses, laboratory teams, managers, and other authorized users.
+            </p>
+            <ul class="experience-tags" aria-label="Key skills">
+              <li>REST APIs</li><li data-i18n="tags.authentication">Authentication</li><li data-i18n="tags.permissions">Permissions</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-intro reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">05 / About</p>
+          <h2 id="about-title" data-i18n="about.title">
+            Code is the medium.<br />
+            <span>Clarity is the product.</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="about-lead" data-i18n="about.lead">
+              I care about the moment a complicated system starts to feel simple.
+            </p>
+            <p data-i18n="about.body">
+              My work sits between product thinking and interface engineering. I build
+              responsive systems, shape API-driven and real-time interactions, optimize
+              performance, and collaborate closely with backend engineers to ship complete experiences.
+            </p>
+            <a
+              class="about-resume-link"
+              href="assets/Fardin-Salehizadeh-Resume.pdf?v=FSR26"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View or download Fardin Salehizadeh's résumé PDF"
+            >
+              <span class="about-resume-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 2.5h8l4 4v15H6Z" />
+                  <path d="M14 2.5v4h4M9 12h6M9 16h6" />
+                </svg>
+              </span>
+              <span class="about-resume-copy">
+                <small data-i18n="about.resumeLabel">Résumé · PDF</small>
+                <strong data-i18n="about.resumeAction">View or download my résumé</strong>
+              </span>
+              <span class="about-resume-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="https://github.com/fardinslh" target="_blank" rel="noreferrer">
+              <span data-i18n="about.repositories">Explore 16 public repositories</span> <span>↗</span>
+            </a>
+            <div class="about-contact-links" aria-label="Direct contact">
+              <a
+                class="about-contact-link"
+                href="https://t.me/fardinslh"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Message Fardin on Telegram"
+              >
+                <span>
+                  <small data-i18n="about.telegram">Telegram</small>
+                  <strong dir="ltr">@fardinslh</strong>
+                </span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+              </a>
+              <a
+                class="about-contact-link"
+                href="tel:+989001115495"
+                aria-label="Call Fardin at 09001115495"
+              >
+                <span>
+                  <small data-i18n="about.phone">Phone</small>
+                  <strong dir="ltr">09001115495</strong>
+                </span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 4.5 10 8 8.5 9.5c1.3 2.7 3.3 4.7 6 6L16 14l3.5 2.5v3A1.5 1.5 0 0 1 18 21C9.7 20.4 3.6 14.3 3 6a1.5 1.5 0 0 1 1.5-1.5h3Z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="capabilities reveal">
+            <div class="capability">
+              <span>01</span>
+              <div><h3 data-i18n="about.capability1.title">Product interfaces</h3><p data-i18n="about.capability1.body">Enterprise dashboards, analytics, reporting systems, and responsive web applications.</p></div>
+            </div>
+            <div class="capability">
+              <span>02</span>
+              <div><h3 data-i18n="about.capability2.title">Front-end systems</h3><p data-i18n="about.capability2.body">Reusable architecture, server-state reliability, accessibility, and performance.</p></div>
+            </div>
+            <div class="capability">
+              <span>03</span>
+              <div><h3 data-i18n="about.capability3.title">Complex workflows</h3><p data-i18n="about.capability3.body">Role-based access, real-time updates, REST APIs, forms, and production delivery.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-matrix reveal" aria-labelledby="skills-title">
+          <div class="skill-matrix-heading">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Technical toolkit</p>
+            <h3 id="skills-title" data-i18n="skills.title">The stack behind the screens.</h3>
+          </div>
+          <div class="skill-group">
+            <span data-i18n="skills.core">Core</span>
+            <p>JavaScript ES6+, TypeScript, React, Next.js, HTML5, CSS3</p>
+          </div>
+          <div class="skill-group">
+            <span data-i18n="skills.state">State &amp; data</span>
+            <p>React Query, Redux Toolkit, Context API, REST APIs, React Hook Form</p>
+          </div>
+          <div class="skill-group">
+            <span data-i18n="skills.ui">UI systems</span>
+            <p>Tailwind CSS, SCSS, Material UI, Bootstrap, ECharts, Framer Motion</p>
+          </div>
+          <div class="skill-group">
+            <span data-i18n="skills.engineering">Engineering</span>
+            <p>App Router, SSR, SSG, PWA, code splitting, Socket.IO, Git, Agile</p>
+          </div>
+        </div>
+
+        <div class="education-card reveal">
+          <div>
+            <p class="eyebrow" data-i18n="education.eyebrow">Education</p>
+            <span data-i18n="education.time">2019—2023</span>
+          </div>
+          <div>
+            <h3 data-i18n="education.degree">B.Sc. Computer Science</h3>
+            <p data-i18n="education.school">Software Engineering · Shahin Shahr Azad University</p>
+          </div>
+          <strong data-i18n="education.gpa">GPA 16/20</strong>
+        </div>
+
+        <div class="stats reveal" aria-label="Portfolio highlights">
+          <div><strong data-i18n="stats.yearsValue">4+</strong><span data-i18n="stats.years">Years in production</span></div>
+          <div><strong data-i18n="stats.projectsValue">08</strong><span data-i18n="stats.projects">Projects showcased</span></div>
+          <div><strong data-i18n="stats.liveValue">05</strong><span data-i18n="stats.live">Live experiences</span></div>
+          <div><strong data-i18n="stats.reposValue">16</strong><span data-i18n="stats.repos">Public repositories</span></div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <p class="eyebrow reveal" data-i18n="contact.eyebrow">06 / Let’s make something useful</p>
+        <h2 id="contact-title" class="reveal" data-i18n="contact.title">Have a product in mind?<br /><span>Let’s give it an edge.</span></h2>
+        <a
+          class="contact-link reveal"
+          href="mailto:fardinsalehizadeh1998@gmail.com"
+        >
+          <span data-i18n="contact.cta">Start a conversation</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+        </a>
+        <div class="contact-socials reveal" aria-label="Professional profiles">
+          <a href="mailto:fardinsalehizadeh1998@gmail.com" data-i18n="contact.email">Email</a>
+          <a href="https://linkedin.com/in/fardinsalehi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/fardinslh" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top" aria-label="Back to top"><span>FS</span></a>
+      <p data-i18n="footer.role">Fardin Salehizadeh · Front-End Engineer</p>
+      <p data-i18n="footer.tagline">Designed &amp; built with intent.</p>
+    </footer>
+
+    <dialog class="gallery-dialog" data-dialog aria-labelledby="gallery-title">
+      <div class="gallery-shell">
+        <div class="gallery-header">
+          <div>
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Archived visual case study</p>
+            <h2 id="gallery-title" data-gallery-title>Project</h2>
+          </div>
+          <button class="gallery-close" type="button" data-gallery-close aria-label="Close gallery">×</button>
+        </div>
+        <div class="gallery-stage">
+          <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev aria-label="Previous screen">←</button>
+          <figure>
+            <img data-gallery-image alt="" decoding="async" />
+            <figcaption>
+              <span data-gallery-caption>Screen</span>
+              <span data-gallery-count>1 / 1</span>
+            </figcaption>
+          </figure>
+          <button class="gallery-arrow gallery-next" type="button" data-gallery-next aria-label="Next screen">→</button>
+        </div>
+        <div class="gallery-thumbs" data-gallery-thumbs aria-label="Gallery thumbnails"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
