@@ -52,7 +52,6 @@ const persianTranslations = {
   "nav.about": "درباره من",
   "nav.resume": "رزومه",
   "hero.status": "برای همکاری حضوری، دورکاری یا ترکیبی آماده‌ام",
-  "hero.interactive3d": "فضای سه‌بعدی تعاملی",
   "hero.role": "مهندس ارشد فرانت‌اند · React · Next.js · TypeScript · توسعه مبتنی بر هوش مصنوعی",
   "hero.eyebrow": "۰۱ / معرفی",
   "hero.title": "برای محصولات <span>پیچیده</span><br>رابط کاربری سریع<br>و پایدار می‌سازم.",

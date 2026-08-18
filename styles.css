@@ -455,21 +455,6 @@ svg {
   gap: 0.5rem;
 }
 
-.status-3d {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.2rem 0.65rem;
-  border-radius: 999px;
-  background: rgba(200, 255, 61, 0.08);
-  border: 1px solid rgba(200, 255, 61, 0.2);
-  color: var(--acid);
-  font-family: "DM Mono", monospace;
-  font-size: 0.64rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 .status i,
 .live-pill i {
   width: 0.45rem;
