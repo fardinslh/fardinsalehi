@@ -681,6 +681,10 @@ svg {
   --project-accent: #e0b43c;
 }
 
+.project-emerald {
+  --project-accent: #10b981;
+}
+
 .project-topline {
   display: flex;
   align-items: center;

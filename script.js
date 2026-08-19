@@ -62,7 +62,7 @@ const persianTranslations = {
   "work.eyebrow": "۰۲ / پروژه‌های منتخب",
   "work.title": "پروژه‌هایی که همین حالا<br><span>می‌توانید امتحانشان کنید.</span>",
   "work.intro":
-    "پنج تجربه آنلاین برای پایش داده‌های سولانا، مدیریت تیم، ارتباط با مشتری، معامله دارایی‌های شبکه Stellar و احراز هویت فروش طلا.",
+    "شش تجربه آنلاین برای پایش داده‌های سولانا، مدیریت عملیات سفارشات ووکامرس، مدیریت تیم، ارتباط با مشتری، معامله دارایی‌های شبکه Stellar و احراز هویت فروش طلا.",
   "common.liveProduct": "نسخه آنلاین",
   "common.demoReady": "نسخه دمو",
   "common.visitLive": "مشاهده سایت ↗",
@@ -71,6 +71,9 @@ const persianTranslations = {
   "projects.solana.kicker": "پایش اکوسیستم · ۲۰۲۶",
   "projects.solana.description":
     "داشبوردی بدون نیاز به ورود که داده‌های شبکه سولانا، اعتبارسنج‌ها، شاخص‌های اقتصادی و دارایی‌های واقعی را خودکار به‌روزرسانی می‌کند و در یک صفحه نمایش می‌دهد.",
+  "projects.orderino.kicker": "مدیریت عملیات ووکامرس · ۲۰۲۶",
+  "projects.orderino.description":
+    "داشبورد پیشرفته مدیریت عملیات سفارشات ووکامرس همراه با رهگیری مرسولات، وضعیت‌های سفارشی، چاپ لیبل و بارکد محلی، و سامانه هوشمند اطلاع‌رسانی پیامکی و وب‌هوک.",
   "projects.taskino.kicker": "مدیریت تیم · ۲۰۲۶",
   "projects.taskino.description":
     "یک CRM سازمانی برای مدیریت گزارش‌ها، تأیید وظایف، برنامه‌های تکرارشونده و ارزیابی عملکرد؛ با داشبوردهای جداگانه برای کارشناس، سرپرست و مدیر و ورود مستقیم به نسخه دمو.",
@@ -98,11 +101,15 @@ const persianTranslations = {
   "experience.eyebrow": "۰۴ / تجربه کاری",
   "experience.title": "تجربه کاری.<br><span>از ۲۰۲۲ تا امروز.</span>",
   "experience.intro":
-    "سابقه کار روی CRM سازمانی، محصولات کریپتو، بازارهای بلادرنگ، رزرو آنلاین و سامانه‌های پزشکی با دسترسی نقش‌محور.",
+    "سابقه کار روی CRM سازمانی، افزونه‌های پیشرفته ووکامرس، محصولات کریپتو، بازارهای بلادرنگ، رزرو آنلاین و سامانه‌های پزشکی با دسترسی نقش‌محور.",
   "experience.taskino.time": "۲۰۲۶—اکنون",
   "experience.seniorFrontendRole": "توسعه‌دهنده ارشد فرانت‌اند",
   "experience.taskino.summary":
     "فرانت‌اند یک CRM سازمانی را برای سه نقش کارشناس، سرپرست و مدیر توسعه می‌دهم؛ ارائه تحلیل داده، برنامه‌ریزی، تأیید وظایف، اعلان‌ها و گردش‌کارهای بلادرنگ با Socket.IO همراه با استفاده از جریان‌های کاری توسعه مبتنی بر AI.",
+  "experience.orderino.time": "۲۰۲۶",
+  "experience.leadFrontendRole": "معمار ارشد فرانت‌اند و افزونه",
+  "experience.orderino.summary":
+    "معماری و توسعه داشبورد مدرن عملیات سفارشات با React 18 و TypeScript برای فروشگاه‌های ووکامرسی پرترافیک؛ با سازگاری کامل HPOS، مدیریت وضعیت‌های سفارشی، تولید محلی بارکد SVG و QR، چاپ فیش حرارتی و اعلان‌های رویدادمحور چندکاناله.",
   "experience.polyshot.time": "۲۰۲۵—مارس ۲۰۲۶",
   "experience.frontendRole": "توسعه‌دهنده فرانت‌اند",
   "experience.polyshot.summary":
@@ -123,6 +130,8 @@ const persianTranslations = {
   "tags.enterpriseCrm": "CRM سازمانی",
   "tags.realtimeUi": "رابط کاربری بلادرنگ",
   "tags.aiWorkflows": "جریان کاری مبتنی بر AI",
+  "tags.hpos": "ووکامرس HPOS",
+  "tags.bilingual": "رابط دو زبانه (RTL/LTR)",
   "tags.performance": "عملکرد",
   "tags.liveData": "داده بلادرنگ",
   "tags.designSystems": "سیستم طراحی",
@@ -167,9 +176,9 @@ const persianTranslations = {
   "education.gpa": "معدل ۱۶ از ۲۰",
   "stats.yearsValue": "۴+",
   "stats.years": "سال تجربه حرفه‌ای",
-  "stats.projectsValue": "۰۸",
+  "stats.projectsValue": "۰۹",
   "stats.projects": "پروژه منتخب",
-  "stats.liveValue": "۰۵",
+  "stats.liveValue": "۰۶",
   "stats.live": "پروژه آنلاین",
   "stats.reposValue": "۱۶",
   "stats.repos": "مخزن عمومی گیت‌هاب",
