@@ -3,7 +3,7 @@
 Personal portfolio website showcasing software engineering projects, experience, and skills.
 
 ## ?? Live Demo
-- [fardinsalehi.vercel.app](https://fardinsalehi.vercel.app)
+- [fardinslh.github.io/fardinsalehi](https://fardinslh.github.io/fardinsalehi)
 
 ## ??? Tech Stack
 - HTML5 / CSS3 / JavaScript (Vanilla)

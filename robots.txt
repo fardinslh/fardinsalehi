@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fardinsalehi.vercel.app/sitemap.xml
+Sitemap: https://fardinslh.github.io/fardinsalehi/sitemap.xml
