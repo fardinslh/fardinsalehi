@@ -685,6 +685,26 @@ svg {
   --project-accent: #10b981;
 }
 
+.project-purple {
+  --project-accent: #9b6bff;
+}
+
+.project-sky {
+  --project-accent: #38bdf8;
+}
+
+.project-amber {
+  --project-accent: #f59e0b;
+}
+
+.project-rose {
+  --project-accent: #f43f5e;
+}
+
+.project-mint {
+  --project-accent: #2dd4bf;
+}
+
 .project-topline {
   display: flex;
   align-items: center;
