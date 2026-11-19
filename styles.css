@@ -1081,6 +1081,32 @@ svg {
   text-wrap: pretty;
 }
 
+.experience-projects {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-projects li {
+  padding-inline-start: 0.9rem;
+  border-inline-start: 1px solid var(--line-strong);
+}
+
+.experience-projects strong {
+  color: var(--paper);
+  font-weight: 600;
+}
+
+.experience-projects span {
+  margin-inline: 0.35rem 0.25rem;
+  color: var(--acid);
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
+
 .experience-tags {
   display: flex;
   grid-column: 3;

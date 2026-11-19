@@ -115,26 +115,15 @@ const persianTranslations = {
   "experience.title": "تجربه کاری.<br><span>از ۲۰۲۲ تا امروز.</span>",
   "experience.intro":
     "سابقه کار روی CRM سازمانی، بازی‌های آنچین، محصولات کریپتو، بازارهای بلادرنگ، رزرو آنلاین و سامانه‌های پزشکی با دسترسی نقش‌محور.",
-  "experience.stockrobbers.time": "سپتامبر ۲۰۲۶—اکنون",
-  "experience.stockrobbers.summary":
-    "فرانت‌اند Next.js یک بازی NFT آنچین روی Robinhood Chain را می‌سازم؛ شامل اسپین و سرقت متحرک، ورود با کیف پول، ارزش‌گذاری زنده سهام توکنی‌شده، کارت‌های اشتراک‌گذاری سمت سرور و پیاده‌سازی دقیق طراحی Figma با TypeScript سخت‌گیرانه.",
-  "experience.taskino.time": "۲۰۲۶—اکنون",
+  "experience.golestan.time": "۲۰۲۶—اکنون",
+  "experience.golestan.company": "شرکت گلستان",
   "experience.seniorFrontendRole": "توسعه‌دهنده ارشد فرانت‌اند",
-  "experience.taskino.summary":
-    "فرانت‌اند یک CRM سازمانی را برای سه نقش کارشناس، سرپرست و مدیر توسعه می‌دهم؛ ارائه تحلیل داده، برنامه‌ریزی، تأیید وظایف، اعلان‌ها و گردش‌کارهای بلادرنگ با Socket.IO همراه با استفاده از جریان‌های کاری توسعه مبتنی بر AI.",
-  "experience.polyshot.time": "۲۰۲۵—مارس ۲۰۲۶",
   "experience.frontendRole": "توسعه‌دهنده فرانت‌اند",
-  "experience.polyshot.summary":
-    "در صفحه‌های داده‌محور بازارهای ورزشی، سرعت رندر و پایداری داده‌های بلادرنگ را بهبود دادم و کامپوننت‌های مشترک را برای توسعه سریع‌تر قابلیت‌ها ساختم.",
-  "experience.lumeme.time": "۲۰۲۴—۲۰۲۵",
-  "experience.lumeme.summary":
-    "در اپلیکیشن Next.js مبتنی بر شبکه Stellar، بخش‌های کشف و ساخت توکن، معامله، نمودار بازار، سواپ، نقدینگی، پروفایل و PWA را توسعه دادم.",
-  "experience.salmooni.time": "۲۰۲۴",
-  "experience.salmooni.summary":
-    "نسخه موبایل فرایند جست‌وجو و رزرو را با اصلاح چیدمان واکنش‌گرا، کاهش رندرهای اضافی React و اعتبارسنجی دقیق‌تر فرم‌ها بهبود دادم.",
-  "experience.lumenswap.time": "۲۰۲۲—۲۰۲۳",
-  "experience.lumenswap.summary":
-    "کامپوننت‌های واکنش‌گرا و قابل استفاده مجدد ساختم و حرکت‌ها و تعاملات رابط یک اپلیکیشن کریپتویی را بهبود دادم.",
+  "experience.golestan.summary":
+    '<ul class="experience-projects"><li><strong>Taskino CRM</strong> فرانت‌اند یک CRM سازمانی را برای کارشناس، سرپرست و مدیر توسعه می‌دهم؛ شامل تحلیل داده، برنامه‌ریزی، تأیید وظایف، اعلان‌ها، داشبوردهای نقش‌محور و گردش‌کارهای بلادرنگ با Socket.IO.</li><li><strong>Takhsis</strong> سامانه فارسی تخصیص کالا و ارسال بار را ساختم که هر روز در حال استفاده است؛ با قواعد دوره تأمین، پیش‌نمایش تکمیل بار و خروجی SAP، اکسل و PDF.</li><li><strong>Customer Insight</strong> پورتال تحلیلی سمت کاربر را ساختم که مشتریان را در خوشه‌های LRFMC دسته‌بندی می‌کند، با جست‌وجو و خروجی CSV.</li></ul>',
+  "experience.lumen.time": "۲۰۲۲—اکنون",
+  "experience.lumen.summary":
+    '<ul class="experience-projects"><li><strong>StockRobbers</strong> <span>۲۰۲۶</span> فرانت‌اند Next.js یک بازی NFT آنچین روی Robinhood Chain را می‌سازم؛ شامل اسپین و سرقت متحرک، ورود با کیف پول، ارزش‌گذاری زنده سهام توکنی‌شده و کارت‌های اشتراک‌گذاری.</li><li><strong>Polyshot.io</strong> <span>۲۰۲۵—۲۰۲۶</span> سرعت رندر و پایداری داده‌های بلادرنگ را در صفحه‌های داده‌محور بازارهای ورزشی بهبود دادم.</li><li><strong>lu.meme</strong> <span>۲۰۲۴—۲۰۲۵</span> بخش‌های کشف و ساخت توکن، معامله، نمودار، سواپ، نقدینگی و PWA را در یک اپلیکیشن Next.js مبتنی بر Stellar توسعه دادم.</li><li><strong>Salmooni.com</strong> <span>۲۰۲۴</span> نسخه موبایل رزرو را با چیدمان واکنش‌گرا، کاهش رندرهای اضافی و اعتبارسنجی دقیق‌تر فرم‌ها بهبود دادم.</li><li><strong>Lumenswap.io</strong> <span>۲۰۲۲—۲۰۲۳</span> کامپوننت‌های واکنش‌گرا و قابل استفاده مجدد ساختم و حرکت‌ها و تعاملات یک اپلیکیشن کریپتویی را بهبود دادم.</li></ul>',
   "experience.zobahan.time": "۲۰۲۲",
   "experience.zobahan.company": "سامانه طب کار ذوب‌آهن",
   "experience.zobahan.summary":
