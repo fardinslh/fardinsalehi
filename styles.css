@@ -294,13 +294,6 @@ svg {
   transform: scale(0.96);
 }
 
-.language-toggle {
-  font-family: "DM Mono", monospace;
-  font-size: 0.64rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
 .theme-icon {
   position: absolute;
   inset: 0;
@@ -2236,98 +2229,6 @@ html[data-theme="light"] .gallery-stage figure > img {
 
 html[data-theme="light"] .gallery-thumb {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
-}
-
-html[lang="fa"] body {
-  font-family: "Vazirmatn", Tahoma, sans-serif;
-}
-
-html[lang="fa"] .hero h1,
-html[lang="fa"] .section-heading h2,
-html[lang="fa"] .about-intro h2,
-html[lang="fa"] .contact-section h2,
-html[lang="fa"] .project-copy h3,
-html[lang="fa"] .archive-copy h3,
-html[lang="fa"] .capability h3,
-html[lang="fa"] .experience-role h3,
-html[lang="fa"] .skill-matrix h3,
-html[lang="fa"] .education-card h3,
-html[lang="fa"] .stats strong {
-  font-family: "Vazirmatn", Tahoma, sans-serif;
-  letter-spacing: -0.045em;
-}
-
-html[lang="fa"] .hero h1 {
-  max-width: 16ch;
-  font-size: clamp(3.4rem, 7vw, 7.8rem);
-  line-height: 1.03;
-}
-
-html[lang="fa"] .eyebrow,
-html[lang="fa"] .hero-meta,
-html[lang="fa"] .project-topline,
-html[lang="fa"] .project-kicker,
-html[lang="fa"] .project-description li,
-html[lang="fa"] .archive-index,
-html[lang="fa"] .archive-copy > span,
-html[lang="fa"] .experience-time,
-html[lang="fa"] .experience-role p,
-html[lang="fa"] .experience-tags li,
-html[lang="fa"] .skill-group span,
-html[lang="fa"] .education-card > div:first-child > span,
-html[lang="fa"] .education-card > strong,
-html[lang="fa"] .stats span,
-html[lang="fa"] .contact-socials a,
-html[lang="fa"] footer {
-  font-family: "Vazirmatn", Tahoma, sans-serif;
-  letter-spacing: 0;
-}
-
-html[lang="fa"] .nav a {
-  font-family: "Vazirmatn", Tahoma, sans-serif;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-html[lang="fa"] .ticker {
-  direction: ltr;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-html[lang="fa"] .skill-group p {
-  direction: ltr;
-  text-align: left;
-}
-
-html[dir="rtl"] .hero-bottom {
-  padding-right: clamp(0rem, 15vw, 14rem);
-  padding-left: 0;
-}
-
-html[dir="rtl"] .visit-chip,
-html[dir="rtl"] .archive-image > span {
-  right: auto;
-  left: 1rem;
-}
-
-html[dir="rtl"] .archive-card {
-  text-align: right;
-}
-
-html[dir="rtl"] .experience-role > p {
-  unicode-bidi: plaintext;
-}
-
-@media (max-width: 980px) {
-  html[dir="rtl"] .hero-bottom {
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 720px) {
-  html[lang="fa"] .hero h1 {
-    font-size: clamp(2.8rem, 12.5vw, 4.6rem);
-  }
 }
 
 @media (max-width: 420px) {
